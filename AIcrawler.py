@@ -22,7 +22,7 @@ from pixiv_crawler.crawlers.ranking_crawler import RankingCrawler
 from pixiv_crawler.crawlers.keyword_crawler import KeywordCrawler
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-cls_names=['其他', '高质量涩图', '百合']
+cls_names=['类型1', '类型2']
 
 def str2bool(v):
     """
@@ -54,7 +54,7 @@ def get_args_parser():
     parser.add_argument('--pos_thr', type=list, default=[2.0, 0.5, 0.2])
 
     # Dataset parameters
-    parser.add_argument('--nb_classes', default=3, type=int,
+    parser.add_argument('--nb_classes', default=2, type=int,
                         help='number of the classification types')
     parser.add_argument('--imagenet_default_mean_and_std', type=str2bool, default=True)
 
