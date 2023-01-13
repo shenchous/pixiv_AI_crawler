@@ -4,7 +4,7 @@ import datetime
 # NOTE: MODE_CONFIG only applies to ranking crawler
 MODE_CONFIG = {
     # start date
-    "START_DATE": datetime.date(2022, 8, 5),
+    "START_DATE": datetime.date(2023, 1, 1),
     # date range: [start, start + domain - 1]
     "RANGE": 1,
 
@@ -15,9 +15,9 @@ MODE_CONFIG = {
         "daily_r18", "weekly_r18",
         "male_r18", "female_r18"
     ],
-    "MODE": "daily",  # choose from the above
+    "MODE": "monthly",  # choose from the above
 
-    "EXP_TAGS": ['漫画'],  # choose from the above
+    "EXP_TAGS": ['插画'],  # choose from the above
 
     # download top x in each ranking
     #   suggested x be a multiple of 50
@@ -34,7 +34,7 @@ NETWORK_CONFIG = {
     # proxy setting
     #   you should customize your proxy setting accordingly
     #   default is for clash
-    "PROXY": {"https": "http://127.0.0.1:1080"},
+    "PROXY": {},
 
     # common request header
     "HEADER": {
