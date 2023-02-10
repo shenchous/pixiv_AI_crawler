@@ -22,7 +22,7 @@ from pixiv_crawler.crawlers.ranking_crawler import RankingCrawler
 from pixiv_crawler.crawlers.keyword_crawler import KeywordCrawler
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-cls_names=['类型1', '类型2']
+cls_names=['正常竖图片', '正常横图片', 'h']
 
 def str2bool(v):
     """
