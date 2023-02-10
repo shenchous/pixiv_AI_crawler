@@ -54,7 +54,7 @@ def get_args_parser():
     parser.add_argument('--pos_thr', type=list, default=[2.0, 0.5, 0.2])
 
     # Dataset parameters
-    parser.add_argument('--nb_classes', default=2, type=int,
+    parser.add_argument('--nb_classes', default=3, type=int,
                         help='number of the classification types')
     parser.add_argument('--imagenet_default_mean_and_std', type=str2bool, default=True)
 
